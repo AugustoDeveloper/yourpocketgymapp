@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">YourPocketGym</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="question_new_here">Are you new here?</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="login">Login</string>
+</resources>

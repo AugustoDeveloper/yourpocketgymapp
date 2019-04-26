@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/colorBackgroundPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="PrimaryRoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/primary_rounded_button</item>
+        <item name="android:textColor">@color/colorTextPrimaryRoundedButton</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto</item>
+    </style>
+
+</resources>
