@@ -15,7 +15,7 @@ class ApiClient {
 
         call.enqueue(object: Callback<Token?> {
             override fun onFailure(call: Call<Token?>, t: Throwable) {
-
+                apiResponse.error(t)
             }
 
             override fun onResponse(call: Call<Token?>, response: Response<Token?>) {
@@ -24,6 +24,8 @@ class ApiClient {
                         val token: Token = it
                         apiResponse.success(token)
                     }
+                } else {
+                    apiResponse.fail()
                 }
             }
         })

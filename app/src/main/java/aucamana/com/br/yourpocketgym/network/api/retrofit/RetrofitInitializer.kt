@@ -7,7 +7,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory
 class RetrofitInitializer {
     private val retrofit =
         Retrofit.Builder()
-            .baseUrl("https://pocket-gym.herokuapp.com")
+            .baseUrl("https://pocket-gym.herokuapp.com/api/")
             .addConverterFactory(JacksonConverterFactory.create())
             .build()
 

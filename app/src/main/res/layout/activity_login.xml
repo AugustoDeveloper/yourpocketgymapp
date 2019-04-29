@@ -13,27 +13,23 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/edittext_password"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp"
-            android:layout_marginStart="32dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp" android:singleLine="true"
+            android:singleLine="true"
             android:textStyle="bold" android:gravity="center"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintBottom_toTopOf="@+id/textView4" android:layout_marginBottom="32dp"
-            style="@style/PrimaryUnderlineEditText"/>
+            style="@style/PrimaryUnderlineEditText" android:text="teste123"
+            app:layout_constraintEnd_toEndOf="@+id/editText_username"
+            app:layout_constraintStart_toStartOf="@+id/editText_username"/>
     <EditText
-            android:layout_width="0dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:id="@+id/editText_username"
-            android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginRight="32dp"
-            android:layout_marginStart="32dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="32dp" android:singleLine="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:singleLine="true"
             android:textStyle="bold" android:gravity="center"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintBottom_toTopOf="@+id/textView3" android:layout_marginBottom="32dp"
-            style="@style/PrimaryUnderlineEditText"/>
+            style="@style/PrimaryUnderlineEditText" android:text="android2"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
             android:text="@string/password"
             android:layout_width="wrap_content"
@@ -67,14 +63,14 @@
             android:textSize="60sp"/>
     <Button
             android:text="@string/login"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/button_login"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="128dp" android:layout_marginRight="128dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="128dp"
-            android:layout_marginStart="128dp" style="@style/PrimaryRoundedButton"
-            android:layout_marginBottom="64dp" app:layout_constraintBottom_toBottomOf="parent"/>
+            style="@style/PrimaryRoundedButton"
+            android:layout_marginBottom="64dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edittext_password"
+            app:layout_constraintEnd_toEndOf="@+id/edittext_password" android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp" android:layout_marginLeft="32dp" android:layout_marginStart="32dp"/>
     <TextView
             android:text="@string/sign_up"
             android:layout_width="wrap_content"
