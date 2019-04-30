@@ -15,7 +15,8 @@
     <style name="PrimaryRoundedButton" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/primary_rounded_button</item>
         <item name="android:textColor">@color/colorTextPrimaryRoundedButton</item>
-        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_bold</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="PrimaryUnderlineEditText" parent="Widget.AppCompat.EditText">

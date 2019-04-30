@@ -3,6 +3,7 @@
     <style name="PrimaryRoundedButton" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/primary_rounded_button</item>
         <item name="android:textColor">@color/colorTextPrimaryRoundedButton</item>
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

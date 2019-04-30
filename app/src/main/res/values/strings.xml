@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">YourPocketGym</string>
     <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
     <string name="password">Password</string>
     <string name="question_new_here">Are you new here?</string>
     <string name="sign_up">Sign Up!</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logged_in_phrase">You are logged in</string>
+    <string name="login_succeded_phrase">Login succeded</string>
+    <string name="something_wrong_phrase">Oops, something is wrong...</string>
+    <string name="login_failed_phrase">Login Failed</string>
 </resources>
