@@ -13,7 +13,6 @@ import aucamana.com.br.yourpocketgym.R
 import aucamana.com.br.yourpocketgym.models.Token
 import aucamana.com.br.yourpocketgym.network.api.ApiClient
 import aucamana.com.br.yourpocketgym.network.api.ApiResponse
-import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     private val PERMISSIONS_REQUEST: Int = 101
@@ -24,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
         setupPermission()
 
-        val editUsername = findViewById<EditText>(R.id.editText_username)
+        val editUsername = findViewById<EditText>(R.id.edittext_username)
         val editPassword = findViewById<EditText>(R.id.edittext_password)
         val progressBar = findViewById<ProgressBar>(R.id.progressbar_login)
         val buttonLogin = findViewById<Button>(R.id.button_login)
@@ -51,6 +50,12 @@ class LoginActivity : AppCompatActivity() {
 
 
             ApiClient().authenticate(username, password, object : ApiResponse<Token> {
+                override fun fail(reason: String) {
+                    Toast.makeText(applicationContext, reason, Toast.LENGTH_SHORT).show()
+                    buttonLogin.isEnabled = true
+                    stopLoading(progressBar)
+                }
+
                 override fun fail() {
                     Toast.makeText(applicationContext, getString(R.string.login_failed_phrase), Toast.LENGTH_SHORT).show()
                     buttonLogin.isEnabled = true

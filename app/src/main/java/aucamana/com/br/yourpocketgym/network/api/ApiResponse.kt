@@ -4,4 +4,5 @@ interface ApiResponse<T> {
     fun success(response: T)
     fun error(throwable: Throwable)
     fun fail()
+    fun fail(reason: String)
 }
